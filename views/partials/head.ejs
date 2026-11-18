@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title><%= title %></title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ocean: '#075985',
+            deep: '#082f49'
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased">
+  <header class="bg-deep text-white shadow-sm">
+    <nav class="max-w-6xl mx-auto px-5 py-4 flex items-center justify-between">
+      <a href="/" class="text-xl sm:text-2xl font-extrabold tracking-tight flex items-center gap-2">
+        <span>🐟</span>
+        <span>TunaFresh</span>
+      </a>
+      <div class="flex items-center gap-4 text-sm text-slate-200">
+        <a href="#ai-assistant" class="hover:text-white transition">AI Assistant</a>
+        <a href="#daftar-produk" class="hover:text-white transition">Produk</a>
+      </div>
+    </nav>
+  </header>
